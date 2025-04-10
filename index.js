@@ -10,9 +10,16 @@ function increment() {
 let saveEl = document.getElementById("save-el")
 
 function save(){
-    let countStr = count + " - " 
-
+    // let countStr = count + " - " 
+    let countStr = `${count} - `
     saveEl.innerText += countStr
     console.log(count)
+    countEl.innerText = 0
+    count = 0   
+    
+}
+
+const name = () => {
+    console.log("Hellow ol")
 }
 
